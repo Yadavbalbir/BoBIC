@@ -1,9 +1,3 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
 
 @charset "UTF-8";
 /*!
@@ -13,6 +7,36 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+
+ .hero-img{
+    border-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust the background-size property as needed */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
+ }
+
+
+
+
+ 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
+}
 
  .video-container {
    position: relative;
@@ -6047,7 +6071,8 @@ textarea.form-control-lg {
 }
 
 .bg-warning {
-  background-color: #F26522 !important;
+  background: rgb(242, 101, 34);
+  background: linear-gradient(90deg, rgba(242, 101, 34, 0.9564635854341737) 0%, rgba(254, 134, 57, 0.9564635854341737) 100%);
 }
 .bg-type1{
   background-color: #FE8639;
@@ -8767,6 +8792,7 @@ h6, .h6 {
   height: 15px;
   width: 15px;
   background-color: #1A338A;
+  color: #fff;
   top: 100%;
   left: 60%;
   z-index: -1;
@@ -8776,6 +8802,7 @@ h6, .h6 {
 }
 .btn.w-100::after, .btn.d-block::after, .btn.d-flex::after, .btn.effect-none::after {
   display: none;
+    color: #fff;
 }
 .btn-sm {
   padding: 13px 25px;
@@ -8784,6 +8811,7 @@ h6, .h6 {
   outline: 0;
   box-shadow: none !important;
   text-decoration: none;
+    color: #fff;
 }
 .btn:hover::after, .btn:active::after, .btn.active::after, .btn:focus::after, .btn.focus::after {
   top: -75px;
@@ -8792,6 +8820,7 @@ h6, .h6 {
   width: 300px;
   transition: 0.4s;
   transform: rotate(0deg);
+    color: #fff;
 }
 
 .btn-primary {
@@ -9426,13 +9455,13 @@ blockquote::before {
   transform: scaleX(1);
 }
 .navigation .navbar-light .navbar-nav .nav-link {
-  color: #040404;
+  color: #162B75;
 }
 .navigation .navbar-light .navbar-nav .nav-link:hover {
-  color: #51B56D;
+  color: #162B75;
 }
 .navigation .navbar-light .navbar-nav .active .nav-link {
-  color: #51B56D;
+  color: #162B75;
 }
 .navigation .navbar-light .navbar-nav .active .nav-link::before {
   transform: scaleX(1);
@@ -9705,21 +9734,23 @@ blockquote::before {
   margin-bottom: 0 !important;
 }
 .accordion-item .accordion-button:not(.collapsed) {
-  color: #040404;
+  color: #162B75;
   background-color: transparent;
   box-shadow: none;
 }
 .accordion-item .accordion-button::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
   transform: rotateX(0);
+
 }
 .accordion-item .accordion-button.active::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22 fill=%22%23000%22%3E%3Cpath fill-rule=%22evenodd%22 d=%22M1.646 4.646a.5.5.0 01.708.0L8 10.293l5.646-5.647a.5.5.0 01.708.708l-6 6a.5.5.0 01-.708.0l-6-6a.5.5.0 010-.708z%22/%3E%3C/svg%3E") !important;
   transform: rotateX(180deg);
+
 }
 
 .accordion-border-bottom .accordion-item:not(:last-child) {
-  border-bottom: 1px solid #D6D6D6;
+  border-bottom: 1px solid #D6d6d6;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }

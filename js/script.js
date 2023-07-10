@@ -80,6 +80,7 @@ $(window).on("load", function () {
     });
   }
   videoPopupInit();
+  
 
   // table of content
   new ScrollMenu("#TableOfContents a", {
