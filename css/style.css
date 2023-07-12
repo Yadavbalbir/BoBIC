@@ -13,11 +13,13 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover; /* Adjust the background-size property as needed */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 0px 15px rgba(253, 136, 63, 0.3)
  }
 
 
-
+.my-shadow{
+  box-shadow: 0px 0px 15px rgba(253, 136, 63, 0.3)
+}
 
  
 
@@ -58,6 +60,13 @@
    height: 100%;
  }
 
+ .text-orange{
+  color: #FE8639 !important;
+ }
+
+ .text-lightblue{
+  color: #4322d7;
+ }
  
 :root {
   --bs-blue: #0d6efd;
@@ -10094,7 +10103,7 @@ textarea.form-control {
   width: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background: rgba(81, 181, 109, 0.5);
+  background: rgba(254, 134, 57, 0.5); 
   color: #fff;
   border: 0;
 }
@@ -10107,7 +10116,7 @@ textarea.form-control {
   outline: 0;
 }
 .slick-arrow:hover {
-  background: #51B56D;
+  background: #F26522;
 }
 
 .prevArrow {
