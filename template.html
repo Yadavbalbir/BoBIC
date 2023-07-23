@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>BoBIC - IIT Bombay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="BoBIC-IIT Bombay">
+  <link rel="shortcut icon" href="images/banner/IITB-BOBIC Logo.jpg" type="image/x-icon">
+  <link rel="icon" href="images/banner/IITB-BOBIC Logo.jpg" type="image/x-icon">
+
+  <!-- theme meta -->
+  <meta name="BoBIC Main website" content="Bank of Baroda Innovation Center" />
+
+  <!-- # Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- # CSS Plugins -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/brands.css">
+  <link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+  <!-- # Main Style Sheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    // Define an array of image URLs
+    var images = [
+      "images/banner/Collaboration.JPG",
+      "images/banner/inauguration.jpg",
+    ];
+
+
+    var currentIndex = 0; // Current index of the displayed image
+
+    // Function to change the image source
+    function changeImage() {
+      var img = document.getElementById("img-hero");
+      img.style.opacity = 1; // Fade out the current image
+
+
+      setTimeout(function () {
+        img.src = images[currentIndex]; // Change the image source
+
+        // Fade in the new image after a short delay
+        setTimeout(function () {
+          img.style.opacity = 1;
+        }, 0);
+
+        currentIndex++;
+        if (currentIndex >= images.length) {
+          currentIndex = 0;
+        }
+      }, 0); // Wait for the fade-out transition to complete (adjust if needed)
+    }
+
+
+    setInterval(changeImage, 2000);
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <!-- 
+<header class="navigation bg-warning">
+  <nav class="navbar navbar-expand-xl navbar-light text-center">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/bob-logo.svg"
+          alt="bobic-logo">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/bob-logo.svg" alt="bobic-logo">
+      </a>
+     
+    </div>
+  </nav>
+</header> -->
+
+  <!-- navigation -->
+  <header class="navigation bg-warning">
+    <nav class="navbar navbar-expand-xl navbar-light text-center pb-3 px-lg-5 px-2">
+
+      <a class="navbar-brand" href="index.html">
+        <img loading="prelaod" decoding="async" class="img-fluid pe-1" style="border-right: 1px solid white;" width="60"
+          src="images/banner/IITB-BOBIC Logo.jpg" alt="bobic-logo">
+        <img loading="prelaod" decoding="async" class="img-fluid mx-2" width="60" src="images/iit-bombay-logo.png"
+          alt="iitb-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"> <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item"> <a class="nav-link" href="index.html">100 IDEAS Programme</a>
+					</li> -->
+
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">100 IDEAS Programme</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="#">Pre-incubation</a>
+              </li>
+              <!-- <li><a class="dropdown-item " href="#">Incubation</a>
+							</li>
+							<li><a class="dropdown-item " href="#">Acceleration</a> -->
+          </li>
+          <li><a class="dropdown-item " href="#">R&D Projects</a>
+          </li>
+          <li><a class="dropdown-item " href="#">Others</a>
+          </li>
+        </ul>
+        </li>
+
+
+        <!-- chair professors  -->
+        <!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chair professors</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="#">Digital Entrepreneurship</a>
+							</li>
+							<li><a class="dropdown-item " href="#">Technology Sustainable Finance</a>
+							</li>
+						
+						</ul>
+					</li> -->
+
+
+        <!-- <li class="nav-item "> <a class="nav-link" href="about.html">Resources</a>
+					</li> -->
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item " href="#">Blogs</a>
+            </li>
+            <li><a class="dropdown-item " href="#">News</a>
+            </li>
+            <li><a class="dropdown-item " href="#">Webinars</a>
+            </li>
+            <li><a class="dropdown-item " href="#">Podcasts</a>
+            </li>
+            <li><a class="dropdown-item " href="#">Videos</a>
+            </li>
+            <li><a class="dropdown-item " href="#">Documents/Reports</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- <li class="nav-item "> <a class="nav-link" href="how-it-works.html">Events</a>
+					</li> -->
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item " href="#">Past</a>
+            </li>
+            <li><a class="dropdown-item " href="#">Forthcoming</a>
+            </li>
+
+          </ul>
+        </li>
+
+        <!-- 
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Collaboration</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item " href="#">Mentorship</a>
+              </li>
+              <li><a class="dropdown-item " href="#">Technical Partner & Support</a>
+              </li>
+              <li><a class="dropdown-item " href="#">Financial Partner & Support</a>
+              </li>
+              <li><a class="dropdown-item " href="#">Sandbox Environment Support</a>
+              </li>
+              <li><a class="dropdown-item " href="#">Marketing Enablement Support</a>
+              </li>
+              <li><a class="dropdown-item " href="#">IITB Alumni Engagement</a>
+              </li>
+            </ul>
+          </li> -->
+
+
+
+        <li class="nav-item "> <a class="nav-link" href="#">Collaboration</a>
+        </li>
+        <li class="nav-item "> <a class="nav-link" href="#">Team</a>
+        </li>
+
+
+        <!-- account btn -->
+        <!-- <a href="#!" class="btn btn-outline-primary">Log In</a> -->
+        <!-- account btn -->
+
+        <a href="#" class="btn btn-deepblue ms-2 ms-lg-3">Contact<span style="font-size: 14px;"
+            class="ms-2 fas fa-arrow-right"></span></a>
+        <li class="nav-item ">
+          <img loading="prelaod" decoding="async" class="img-fluid mx-2"
+            style="border-left: 1px solid white; padding-left: 3px;" width="60" src="images/bob-world-logo.svg"
+            alt="bobic-logo">
+          <img loading="prelaod" decoding="async" class="img-fluid " width="120" src="images/bob-logo.svg"
+            alt="bobic-logo">
+
+        </li>
+      </div>
+
+    </nav>
+  </header>
+  <!-- /navigation -->
+
+  <div class=" text-center ">
+    <div class="post-slider overflow-hidden my-shadow ">
+      <img loading="lazy" decoding="async" src="images/slider-img/Collaboration-1.jpg" alt="project-img">
+      <img loading="lazy" decoding="async" src="images/slider-img/Ribbon.jpg" alt="project-img">
+      <img loading="lazy" decoding="async" src="images/slider-img/BoBIC DirectorLighting.jpg" alt="project-img">
+    </div>
+  </div>
+
+
+  
+  <footer class="section-sm bg-tertiary">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">100 IDEAS Programme</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Pre-Incubation</a>
+              </li>
+              <li class="mb-2"><a href="#">Incubation</a>
+              </li>
+              <li class="mb-2"><a href="#">Acceleration</a>
+              </li>
+              <li class="mb-2"><a href="#">R&D Projects</a>
+              </li>
+              <li class="mb-2"><a href="#">Others</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">Resources</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#!">Blogs</a>
+              </li>
+              <li class="mb-2"><a href="#!">News</a>
+              </li>
+              <li class="mb-2"><a href="#!">Webinars</a>
+              </li>
+              <li class="mb-2"><a href="#!">Podcasts</a>
+              </li>
+              <li class="mb-2"><a href="#!">Videos</a>
+              </li>
+              <li class="mb-2"><a href="#!">Documents & Reports</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">Know More</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Team</a>
+              </li>
+              <li class="mb-2" id="internship"><a href="#">Internship Opportunity</a>
+              </li>
+              <li class="mb-2"><a href="#!">Digital Entrepreneurship</a>
+              </li>
+              <li class="mb-2"><a href="#!">Past Events</a>
+              </li>
+              <li class="mb-2"><a href="#!">Mentorship</a>
+              </li>
+              <li class="mb-2"><a href="#!">IITB Alumni Engagement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 newsletter-form">
+          <div style="background-color: #F4F4F4; padding: 35px;">
+            <h5 class="mb-4 text-primary font-secondary">Stay Connected with Us!</h5>
+            <div class="pe-0 pe-xl-5">
+              <form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address">
+                  <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+                </div>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+                </div>
+              </form>
+            </div>
+            <p class="mb-0">Subscribe to our newsletter to receive the latest updates, news, and exclusive content right
+              in your inbox. By providing
+              your email address, you'll join our vibrant community and be among the first to know about our latest blog
+              posts, news
+              articles, and exciting announcements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mt-5 text-center text-md-start">
+        <div class="col-lg-4 d-flex">
+          <a href="index.html">
+            <img loading="prelaod" decoding="async" class="img-fluid" width="100"
+              src="images/banner/IITB-BOBIC Logo.jpg" alt="BoBIC">
+          </a>
+
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <ul class="list-unstyled list-inline mb-0 text-lg-center">
+            <li class="list-inline-item me-4"><a class="text-black" href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item me-4"><a class="text-black" href="#">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+          <ul class="list-unstyled list-inline mb-0 social-icons">
+            <li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black"
+                href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black"
+                href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black"
+                href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- # JS Plugins -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
