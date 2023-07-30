@@ -8862,7 +8862,7 @@ h6, .h6 {
   color: #fff;
 }
 .btn-outline-primary.w-100:hover, .btn-outline-primary.d-block:hover, .btn-outline-primary.d-flex:hover, .btn-outline-primary.effect-none:hover {
-  background: #1A338A;
+  background: #FFEDE1;
 }
 
 .nav-pills .nav-link:hover {
@@ -8870,7 +8870,7 @@ h6, .h6 {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: #51B56D;
+  background-color: #fe8639;
 }
 
 body {
